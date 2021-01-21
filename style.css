@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  width: 100%;
+  height: auto;
+  background-color: #f7f7ff;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header h1 {
+  font-size: 41px;
+  font-weight: bolder;
+  margin-top: 100px;
+  color: #7d84d0;
+}
+header .celect {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-top: 35px;
+  font-size: 20px;
+}
+header .celect p {
+}
+header .celect input {
+  cursor: pointer;
+}
+/*seaction style*/
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+section .typ {
+  width: 20%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+}
+
+section .typ hr {
+  width: 80%;
+}
+section .typ h3 {
+  font-size: 25px;
+  margin-top: 20px;
+}
+section .typ h4 {
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+section .typ p {
+  font-size: 24px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+section .typ a {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-decoration: none;
+  width: 80%;
+  background-color:#7d84d0 ;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+section .typ a:hover {
+  color: #7d84d0;
+  background-color: white;
+  border: 2px solid #7d84d0;
+}
+section #big {
+  background-color: #7d84d0;
+  height: 440px;
+  position: relative;
+  top: -20px;
+  color: white;
+}
+section #big a {
+  color: #7d84d0;
+  text-decoration: none;
+  border: 2px solid #7d84d0;
+  background-color: white;
+  width: 80%;
+  border-radius: 5px;
+}
+section #big a:hover {
+  color: white;
+  background-color:#7d84d0;
+  border: 2px solid white;
+}
+section #big h3 {
+  margin-top: 40px;
+  
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .celect {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-top: 35px;
+    font-size: 20px;
+  }
+  header .celect input {
+  }
+  /*seaction style*/
+  section {
+    display: initial;
+  }
+  section .typ {
+    width: 90%;
+    margin: auto;
+    margin-top: 48px;
+  }
+  section #big {
+    position: initial;
+  }
+}

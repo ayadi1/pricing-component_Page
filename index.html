@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+  </head>
+  <body>
+    <header>
+      <h1>Our Pricing</h1>
+      <div class="celect">
+        <p>Annually</p>
+        <input type="checkbox" id="checkbox" />
+        <p>Monthly</p>
+      </div>
+    </header>
+    <section>
+      <div class="typ">
+        <h3>Basic</h3>
+        <h4 id="prix1">&dollar;19.99</h4>
+        <hr />
+        <p>500 GB Storage</p>
+        <hr />
+        <p>2 Users Allowed</p>
+        <hr />
+        <p>Send up to 3 GB</p>
+        <hr />
+        <a href="">Learn More</a>
+      </div>
+      <div class="typ" id="big">
+        <h3>Professional</h3>
+        <h4 id="prix2">&dollar;24.99</h4>
+        <hr />
+        <p>1 TB Storage</p>
+        <hr />
+        <p>5 Users Allowed</p>
+        <hr />
+        <p>Send up to 10 GB</p>
+        <hr />
+        <a href="">Learn More</a>
+      </div>
+      <div class="typ">
+        <h3>Master</h3>
+        <h4 id="prix3">&dollar;39.99</h4>
+        <hr />
+        <p>2 TB Storage</p>
+        <hr />
+        <p>10 Users Allowed</p>
+        <hr />
+        <p>Send up to 20 GB</p>
+        <hr />
+        <a href="">Learn More</a>
+      </div>
+    </section>
+    <script>
+      var checkbox = document.getElementById("checkbox");
+
+      checkbox.addEventListener("change", function () {
+        var prix1 = document.getElementById("prix1");
+        var prix2 = document.getElementById("prix2");
+        var prix3 = document.getElementById("prix3");
+        if (this.checked) {
+          prix1.innerHTML = "&dollar;199.99";
+          prix2.innerHTML = "&dollar;249.99";
+          prix3.innerHTML = "&dollar;399.99";
+        } else {
+          prix1.innerHTML = "&dollar;19.99";
+          prix2.innerHTML = "&dollar;24.99";
+          prix3.innerHTML = "&dollar;39.99";
+        }
+      });
+    </script>
+    <!-- 
+  Our Pricing
+  Annually
+  Monthly
+
+  Basic
+  &dollar;19.99
+  &dollar;199.99
+  500 GB Storage
+  2 Users Allowed
+  Send up to 3 GB
+  Learn More
+
+  Professional
+  &dollar;24.99
+  &dollar;249.99
+  1 TB Storage
+  5 Users Allowed
+  Send up to 10 GB
+  Learn More
+
+  Master
+  &dollar;39.99
+  &dollar;399.99
+  2 TB Storage
+  10 Users Allowed
+  Send up to 20 GB
+  Learn More
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
